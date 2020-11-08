@@ -14,13 +14,14 @@ function GeneralInfo() {
   };
 
   return (
-    <div className="gen-info-container">
+    <>
       <input
         type="text"
         name="userName"
         value={info.userName}
         onChange={handleChange}
         placeholder="Name"
+        id="userName-input"
       />
       <input
         type="text"
@@ -28,6 +29,7 @@ function GeneralInfo() {
         value={info.location}
         onChange={handleChange}
         placeholder="Location"
+        id="location-input"
       />
       <input
         type="text"
@@ -35,6 +37,7 @@ function GeneralInfo() {
         value={info.phoneNum}
         onChange={handleChange}
         placeholder="Phone"
+        id="phoneNum-input"
       />
       <input
         type="text"
@@ -42,8 +45,9 @@ function GeneralInfo() {
         value={info.email}
         onChange={handleChange}
         placeholder="Email"
+        id="email-input"
       />
-      </div>
+    </>
   );
 }
 
