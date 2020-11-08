@@ -32,7 +32,7 @@ input:not([type='submit']):hover {
 
 .gen-info-section {
   margin-top: 40px;
-  margin: 40px 0 20px;
+  margin: 40px 0 35px;
   padding-left: 15px;
 }
 
@@ -67,6 +67,10 @@ input:not([type='submit']):hover {
   margin-left: 20px;
 }
 
+.work-section {
+
+}
+
 .modal-btn-container {
   margin: 10px 0 20px 20px;
 }
@@ -81,4 +85,87 @@ input:not([type='submit']):hover {
   color: #3434ff;
   font-weight: 800;
   font-size: 14px;
+}
+
+.modal-container {
+  border: 1px solid #cacaca;
+  margin: 5px 0 5px 20px;
+  padding: 15px 15px;
+  color: #303030;
+  border-radius: 5px;
+}
+
+.modal-content label {
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.modal-content input:not([type='submit']),
+#job-desc, #degree {
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding-left: 5px;
+  outline: none;
+}
+
+#job-desc {
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  height: 140px;
+  padding-top: 5px;
+}
+
+#job-desc::placeholder {
+  color: #808080;
+  font-size: 15px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.modal-action-btns {
+  display: inline-block;
+  width: 100%;
+}
+
+.save-info-btn {
+  color: red;
+  width: 80px;
+  height: 40px;
+  margin: 5px 15px 5px 0px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #0070e0;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.save-info-btn:hover {
+  color: #1b8dff;
+}
+
+.close-form-btn {
+  width: 95px;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid #cacaca;
+  background-color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  color: #0070e0;
+  cursor: pointer;
 }
