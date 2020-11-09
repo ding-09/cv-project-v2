@@ -9,7 +9,7 @@ function WorkExpForm(props) {
     description: '',
   };
 
-  const [workInfo, setInfo] = useState(initialState)
+  const [workInfo, setInfo] = useState(initialState);
 
   const resetState = () => {
     setInfo(initialState);

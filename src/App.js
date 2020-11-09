@@ -1,6 +1,8 @@
 import './App.css';
-import GeneralInfo from './components/GeneralInfo';
-import Work from './components/Work';
+import GeneralInfo from './components/GeneralInfo/GeneralInfo';
+import Work from './components/WorkHistory/Work';
+import Education from './components/EducationHistory/Education';
+import SavePageBtn from './components/SavePageBtn';
 
 function App() {
   return (
@@ -10,6 +12,12 @@ function App() {
       </div>
       <div className="work-section">
         <Work />
+      </div>
+      <div className="education-section">
+        <Education />
+      </div>
+      <div className="save-cv-container">
+        <SavePageBtn />
       </div>
     </div>
   );

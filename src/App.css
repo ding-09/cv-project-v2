@@ -10,6 +10,10 @@
   margin: 50px auto;
 }
 
+.app > div {
+  margin-bottom: 50px;
+}
+
 ::placeholder {
   color: #000000;
 }
@@ -67,10 +71,6 @@ input:not([type='submit']):hover {
   margin-left: 20px;
 }
 
-.work-section {
-  
-}
-
 .modal-btn-container {
   margin: 10px 0 20px 20px;
 }
@@ -89,7 +89,7 @@ input:not([type='submit']):hover {
 
 .modal-container {
   border: 1px solid #cacaca;
-  margin: 5px 0 5px 20px;
+  margin: 10px 0 5px 20px;
   padding: 15px 15px;
   color: #303030;
   border-radius: 5px;
@@ -107,7 +107,7 @@ input:not([type='submit']):hover {
 }
 
 .modal-content input:not([type='submit']),
-#job-desc, #degree {
+#job-desc, #degree-input {
   height: 35px;
   border-radius: 5px;
   border: 1px solid #808080;
@@ -224,4 +224,10 @@ span {
 
 .render-info:hover .delete-btn {
   background-color: #f2f2f2;
+}
+
+#degree-input {
+  width: 100%;
+  padding: 5px;
+  font-style: bold;
 }

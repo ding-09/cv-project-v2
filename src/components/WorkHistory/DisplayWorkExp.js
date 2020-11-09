@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function FormatDesc(props) {
   const { desc } = props;
@@ -16,10 +16,7 @@ function DeleteBtn(props) {
 
   return (
     <div className="delete-btn-container">
-      <button
-        className="delete-btn"
-        onClick={props.deleteHist.bind(this, id)}
-      >
+      <button className="delete-btn" onClick={props.deleteHist.bind(this, id)}>
         X
       </button>
     </div>

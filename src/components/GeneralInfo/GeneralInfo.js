@@ -13,6 +13,15 @@ function GeneralInfo() {
     setInfo({ ...info, [name]: value });
   };
 
+  const formatNum = (e) => {
+    let phone = e.target.value.split('');
+    phone.splice(0, 0, '(');
+    phone.splice(4, 0, ') ');
+    phone.splice(8, 0, '-');
+    const newPhoneNum = phone.join('');
+    setInfo({ ...info, phoneNum: newPhoneNum });
+  };
+
   return (
     <>
       <input
@@ -36,6 +45,7 @@ function GeneralInfo() {
         name="phoneNum"
         value={info.phoneNum}
         onChange={handleChange}
+        onBlur={formatNum}
         placeholder="Phone"
         id="phoneNum-input"
       />
