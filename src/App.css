@@ -68,7 +68,7 @@ input:not([type='submit']):hover {
 }
 
 .work-section {
-
+  
 }
 
 .modal-btn-container {
@@ -168,4 +168,60 @@ span {
   font-size: 15px;
   color: #0070e0;
   cursor: pointer;
+}
+
+.render-info {
+  margin: 10px 0px 30px 20px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.render-info * {
+  margin-bottom: 5px;
+}
+
+.main-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.date-info {
+  color: #808080;
+  font-size: 13px;
+}
+
+.sub-info {
+  font-size: 14px;
+}
+
+.formatted-list {
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.delete-btn-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.delete-btn {
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #919191;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete-btn:hover {
+  color: #eb5b5b;
+}
+
+.render-info:hover {
+  background-color: #f2f2f2;
+}
+
+.render-info:hover .delete-btn {
+  background-color: #f2f2f2;
 }
