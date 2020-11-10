@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uniqid from 'uniqid';
 
 function WorkExpForm(props) {
   const initialState = {
@@ -7,6 +8,7 @@ function WorkExpForm(props) {
     dateWorked: '',
     location: '',
     description: '',
+    id: uniqid()
   };
 
   const [workInfo, setInfo] = useState(initialState);

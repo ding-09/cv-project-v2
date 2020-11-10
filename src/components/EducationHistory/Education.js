@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionHeading from '../../layout/SectionHeading';
-import OpenModalBtn from '../OpenModalBtn';
+import OpenModalBtn from '../buttons/OpenModalBtn';
 import EduExpForm from './EduExpForm';
 import DisplayEdu from './DisplayEdu';
 
@@ -28,8 +28,8 @@ function Education() {
     <>
       <SectionHeading title="Education" />
 
-      {edu.map((eduHist, index) => (
-        <DisplayEdu eduHist={eduHist} key={index} deleteEdu={deleteEdu} />
+      {edu.map((eduHist) => (
+        <DisplayEdu eduHist={eduHist} key={eduHist.id} deleteEdu={deleteEdu} />
       ))}
       <EduExpForm
         displayForm={displayForm}

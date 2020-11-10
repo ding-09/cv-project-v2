@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function GeneralInfo() {
+function GeneralInfo(props) {
   const [info, setInfo] = useState({
     userName: '',
     location: '',

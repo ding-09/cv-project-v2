@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uniqid from 'uniqid';
 
 function EduExpForm(props) {
   const initialState = {
@@ -7,6 +8,7 @@ function EduExpForm(props) {
     studyField: '',
     location: '',
     degree: '',
+    id: uniqid(),
   };
 
   const [eduInfo, setInfo] = useState(initialState);
@@ -96,7 +98,7 @@ function EduExpForm(props) {
 
         <div className="modal-action-btns">
           <input type="submit" value="Save" className="save-info-btn" />
-          <button className="close-form-btn" onClick={props.closeModal}>
+          <button className="close-form-btn" onClick={props.handleDisplay}>
             Cancel
           </button>
         </div>

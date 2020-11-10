@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 function FormatDesc(props) {
   const { desc } = props;
+  if ( desc === '') return '';
   return (
     <ul className="work-desc-list">
+
       {desc.split('\n').map((bulletPoint) => {
         return <li>{bulletPoint}</li>;
       })}
@@ -24,7 +26,7 @@ function DeleteBtn(props) {
 }
 
 function DisplayWorkExp(props) {
-  const { workHist } = props;
+  const { workHist, id } = props;
 
   return (
     <div className="render-info">
@@ -35,7 +37,7 @@ function DisplayWorkExp(props) {
       <div className="formatted-list">
         <FormatDesc desc={workHist.description} />
       </div>
-      <DeleteBtn id={workHist.id} deleteHist={props.deleteHist} />
+      <DeleteBtn id={id} deleteHist={props.deleteHist} />
     </div>
   );
 }

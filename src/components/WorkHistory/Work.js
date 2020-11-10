@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionHeading from '../../layout/SectionHeading';
-import OpenModalBtn from '../OpenModalBtn';
+import OpenModalBtn from '../buttons/OpenModalBtn';
 import WorkExpForm from './WorkExpForm';
 import DisplayWorkExp from './DisplayWorkExp';
 
@@ -27,10 +27,11 @@ function Work() {
   return (
     <>
       <SectionHeading title="Work Experience" />
-      {workExp.map((workHist, index) => (
+      
+      {workExp.map((workHist) => (
         <DisplayWorkExp
           workHist={workHist}
-          key={index}
+          key={workHist.id}
           deleteHist={deleteHist}
         />
       ))}
